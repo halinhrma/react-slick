@@ -519,7 +519,7 @@ export const getSlideCount = spec => {
     const datas = slickList.querySelectorAll(".slick-slide");
     let slides = [];
     datas.forEach(slide => {
-      if (!s.getElementsByClassName(".not-slide").length) slides.push(slide);
+      if (!slide.getElementsByClassName(".not-slide").length) slides.push(slide);
     })
     Array.from(slides).every(slide => {
       if (!spec.vertical) {
